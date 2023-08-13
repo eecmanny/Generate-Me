@@ -1,68 +1,70 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-// const GenerateMarkdown = require('./utils/generateMarkdown');
-// console.log(GenerateMarkdown.date.title);
+const MarkDown = require('./utils/generateMarkdown');
 
 // TODO: Create an array of questions for user input
-const generateREADME = ({ project, section, description, installation, usage, license, contributing, test, questions, tableOfContent }) =>
+const generateREADMEQuestions = ({ title, installation, usage, license, features, contributes, test, questions, email, github, deployedSite }) =>
     inquirer
         .prompt([
             {
                 type: 'input',
                 name: 'title',
-                message: 'What is your README project title?',
+                message: "What is your project's title?",
             },
             {
                 type: 'input',
-                name: 'section',
-                message: 'What is the README section entitled',
-            },
-            {
-                type: 'input',
-                name: 'description',
-                message: 'What is the README description entitled',
+                name: 'credit',
+                message: 'List your collaborators, if any, with links to their GitHub profiles. If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section. If you followed tutorials, include links to those here as well.',
             },
             {
                 type: 'input',
                 name: 'installation',
-                message: 'What is your installation?',
+                message: 'What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.',
             },
             {
                 type: 'input',
                 name: 'usage',
-                message: 'What is your Usage?',
+                message: 'Provide instructions and examples for use.',
             },
             {
                 type: 'input',
                 name: 'license',
-                message: 'What is your license?',
+                message: 'What is your license agreement for this project?',
             },
             {
                 type: 'input',
-                name: 'contributing',
-                message: 'What is your contributing?',
+                name: 'features',
+                message: 'What features does your project have?',
+            },
+            {
+                type: 'input',
+                name: 'contributes',
+                message: 'How would you like other users to use your application?',
             },
             {
                 type: 'input',
                 name: 'test',
-                message: 'Enter your tests?',
+                message: 'How do you run your test?',
             },
             {
                 type: 'input',
-                name: 'questions',
-                message: 'Enter your questions?',
+                name: 'email',
+                message: 'Enter your email address?',
             },
-            // {
-            //     message: 'Would you like a table of content?',
-            //// Not right
-            //     type: 'list',
-            //     name: 'tableOfContent',
-            //      input: y/n,
-            // },
+            {
+                type: 'input',
+                name: 'github',
+                message: 'Enter your Github link?',
+            },
+            {
+                type: 'input',
+                name: 'deployedSite',
+                message: 'Enter your application link?',
+            },
         ])
         .then((answers) => {
-            const pREADMEPageContent = generateREADME(answers);
+            const pREADMEPageContent = generateREADMEQuestions(answers);
 
 
             // TODO: Create a function to write README file
@@ -75,7 +77,9 @@ const generateREADME = ({ project, section, description, installation, usage, li
 
 
 // TODO: Create a function to initialize app
-function init() { }
+function init() { 
+generateREADMEQuestions;
+};
 
 // Function call to initialize app
 init();

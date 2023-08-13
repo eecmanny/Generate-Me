@@ -36,7 +36,7 @@ function renderQuestionsSection(questions) { }
 
 // TODO: Create a function to generate markdown for README
 //Put the 
-class Markdown {
+class MarkDown {
   generateMarkdown(data) {
     return `# ${data.title}
   
@@ -92,4 +92,4 @@ class Markdown {
   }
 };
 
-module.exports = Markdown;
+module.exports = MarkDown;

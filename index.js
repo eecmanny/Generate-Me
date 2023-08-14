@@ -4,7 +4,7 @@ const fs = require('fs');
 const MarkDown = require('./utils/generateMarkdown');
 
 // TODO: Create an array of questions for user input
-const generateREADMEQuestions = ({ title, installation, usage, license, features, contributes, test, questions, email, github, deployedSite }) =>
+const generateREADMEQuestions = () =>
     inquirer
         .prompt([
             {
@@ -64,7 +64,7 @@ const generateREADMEQuestions = ({ title, installation, usage, license, features
             },
         ])
         .then((answers) => {
-            const pREADMEPageContent = generateREADMEQuestions(answers);
+            const pREADMEPageContent = MarkDown(answers);
 
 
             // TODO: Create a function to write README file
@@ -78,7 +78,7 @@ const generateREADMEQuestions = ({ title, installation, usage, license, features
 
 // TODO: Create a function to initialize app
 function init() { 
-generateREADMEQuestions;
+generateREADMEQuestions();
 };
 
 // Function call to initialize app

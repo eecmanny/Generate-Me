@@ -36,8 +36,10 @@ function renderQuestionsSection(questions) { }
 
 // TODO: Create a function to generate markdown for README
 //Put the 
-class MarkDown {
-  generateMarkdown(data) {
+// class MarkDown {
+function  Markdown(data) {
+  console.log('in markdown', data)
+// generateMarkdown(data) {
     return `# ${data.title}
   
     ## Table of Content
@@ -90,6 +92,7 @@ class MarkDown {
     ${data.deployedSite}
   `;
   }
-};
+// };
 
-module.exports = MarkDown;
+module.exports = Markdown;
+// module.exports = generateMarkdown;

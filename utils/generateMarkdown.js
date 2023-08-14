@@ -42,7 +42,7 @@ function  Markdown(data) {
 // generateMarkdown(data) {
     return `# ${data.title}
   
-    ## Table of Content
+    ##Table of Content
     - [Installation](#installation)
     - [Usage](#usage)
     - [Credits](#credit)
@@ -55,7 +55,7 @@ function  Markdown(data) {
     
     
     
-    ## Installation
+    ##[Installation]
     ${data.installation}
     
     ## Usage
@@ -71,7 +71,7 @@ function  Markdown(data) {
   
     
     ## Badges
-    ${data.badge}
+    ${data.badges}
    
     
     ## Features
@@ -83,7 +83,7 @@ function  Markdown(data) {
   
     
     ## Test
-    ${data.tests}
+    ${data.test}
   
     
     ## Questions
@@ -95,4 +95,3 @@ function  Markdown(data) {
 // };
 
 module.exports = Markdown;
-// module.exports = generateMarkdown;

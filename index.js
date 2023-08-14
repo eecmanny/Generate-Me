@@ -34,6 +34,11 @@ const generateREADMEQuestions = () =>
             },
             {
                 type: 'input',
+                name: 'badges',
+                message: 'Do you have any badges, if "No" type N/A?',
+            },
+            {
+                type: 'input',
                 name: 'features',
                 message: 'What features does your project have?',
             },
@@ -77,8 +82,8 @@ const generateREADMEQuestions = () =>
 
 
 // TODO: Create a function to initialize app
-function init() { 
-generateREADMEQuestions();
+function init() {
+    generateREADMEQuestions();
 };
 
 // Function call to initialize app

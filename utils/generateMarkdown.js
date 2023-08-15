@@ -12,11 +12,29 @@
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) { }
+function renderLicenseSection(license) {
+    if (license === 'GPL') {
+        console.log('You chose GPL license');
+    } else if (license === 'MIT') {
+        console.log('You chose MIT license');
+    } else if (license === 'BSD') {
+        console.log('You chose BSD license');
+    } else if (license === 'AGPL') {
+        console.log('You chose AGPL license');
+    } else if (license === 'Open-source license') {
+        console.log('You chose an open-source license');
+    } else {
+        console.log('No license chosen');
+    }
+
+  renderBadgesSection();
+ }
 
 // TODO: Create a function that returns the badges section of README
 // If there is no badges, return an empty string
-function renderBadgesSection(badges) { }
+function renderBadgesSection(badges) { 
+
+}
 
 // // TODO: Create a function that returns the features section of README
 // // If there is no features, return an empty string

@@ -28,9 +28,10 @@ const generateREADMEQuestions = () =>
                 message: 'Provide instructions and examples for use.',
             },
             {
-                type: 'input',
+                type: 'list',
                 name: 'license',
                 message: 'What is your license agreement for this project?',
+                choices: ['GPL', 'MIT', 'BSD', 'AGPL', 'Open-source license' ,''],
             },
             {
                 type: 'input',

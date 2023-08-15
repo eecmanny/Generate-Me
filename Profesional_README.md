@@ -1,51 +1,51 @@
-# 
+# a
   
-    ## Table of Content
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [Credits](#credit)
-    - [License](#license)
-    - [Badges](#badges)
-    - [features](#features)
-    - [Contribute](#contributes)
-    - [Test](#test)
-    - [Questions](#questions)
+## Table of Content
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credit)
+- [License](#license)
+- [Badges](#badges)
+- [features](#features)
+- [Contribute](#contributes)
+- [Test](#test)
+- [Questions](#questions)
     
     
     
-    ## Installation
+## Installation
+a
     
-    
-    ## Usage
-    
-  
-    
-    ## Credits
-    
+## Usage
+a
   
     
-    ## License
-    
+## Credits
+a
   
     
-    ## Badges
+## License
+MIT
+  
     
+## Badges
+a
    
     
-    ## Features
-    
+## Features
+s
   
     
-    ## How to Contribute
-    
+## How to Contribute
+s
   
     
-    ## Test
-    
+## Test
+s
   
     
-    ## Questions
-    
-    
-    
+## Questions
+e
+w
+q
   

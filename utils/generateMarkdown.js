@@ -4,7 +4,7 @@
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
  
-  //If else statments that will make badges in Markdown format
+  //If else statments that will make descriptions in Markdown format
 
   if (license === 'GPL') {
     `                    GNU GENERAL PUBLIC LICENSE

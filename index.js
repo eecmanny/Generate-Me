@@ -31,7 +31,7 @@ const generateREADMEQuestions = () =>
                 type: 'list',
                 name: 'license',
                 message: 'What is your license agreement for this project?',
-                choices: ['GPL', 'MIT', 'BSD', 'AGPL', 'Open-source license' ,''],
+                choices: ['GPL', 'MIT', 'BSD', 'WTFPL', 'AGPL', 'IBM' ,''],
             },
             {
                 type: 'input',

@@ -33,11 +33,11 @@ const generateREADMEQuestions = () =>
                 message: 'What is your license agreement for this project?',
                 choices: ['GPL', 'MIT', 'BSD', 'WTFPL', 'AGPL', 'IBM' ,''],
             },
-            {
-                type: 'input',
-                name: 'badges',
-                message: 'Do you have any badges, if "No" type N/A?',
-            },
+            // {
+            //     type: 'input',
+            //     name: 'badges',
+            //     message: 'Do you have any badges, if "No" type N/A?',
+            // },
             {
                 type: 'input',
                 name: 'features',

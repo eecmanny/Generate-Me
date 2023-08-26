@@ -1,5 +1,11 @@
 The user wants a README generator SO that they can quickly create a professional README for a new projects.
 
+Video
+https://youtu.be/NVkcasbsy4E
+
+Github repo
+https://github.com/eecmanny/Generate-Me/
+
 
 I had outside help from the BSC helpers.
 
